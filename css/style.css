@@ -35,7 +35,6 @@ header{
 .header-button{
 	display: inline-block;
 	text-decoration: none;
-	
 	box-shadow: 10px 17px 34px 6px rgba(18, 61, 145, 0.83);
 	border-radius: 50px;
 	background-color: #ffffff;
@@ -46,6 +45,15 @@ header{
 	padding: 17px 55px;
 	margin-top: 33px;
 	border: none;
+	-webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+	-ms-transition: 0.2s;
+	-o-transition: 0.2s;
+	transition: 0.2s;
+	
+}
+.header-button:hover{
+	box-shadow: none;
 }
 header small{
 	font-size: 12px;
@@ -149,6 +157,14 @@ footer{
 	background-color: transparent;
 	padding: 15px 40px;
 	cursor: pointer;
+	-webkit-transition: 0.2s;
+	-o-transition: 0.2s;
+	transition: 0.2s;
+
+}
+.footer-button:hover{
+	background-color: #ffffff;
+	color: #3a7dfd;
 
 }
 @media (max-width: 1200px){

@@ -18,6 +18,7 @@
 		<!-- Подключаем наш файл со стилями, который находится в папке css-->
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/animate.css">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
 
 </head>
@@ -25,14 +26,14 @@
 	<header>
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-7"><img class="header-img" src="img/Compphoto.png" alt="Монитор" ></div>
+				<div class="col-lg-7"><img class="header-img wow fadeInLeftBig" src="img/Compphoto.png" alt="Монитор" ></div>
 				<!-- /.col-7 -->
 				<div class="col-lg-5">
-					<p class="header-prititle">Веб-разработчик</p>
-					<h1 class="header-title">Артём Исламов</h1>
-					<p class="header-subtite">Верстка на HTML/CSS <br>
+					<p class="header-prititle wow fadeInRightBig " data-wow-delay="0.1s">Веб-разработчик</p>
+					<h1 class="header-title wow fadeInRightBig" data-wow-delay="0.2s">Артём Исламов</h1>
+					<p class="header-subtite wow fadeInRightBig" data-wow-delay="0.3s">Верстка на HTML/CSS <br>
 Разработка сайтов под ключ</p>
-				<div class="header-button-block">
+				<div class="header-button-block wow fadeInRightBig" data-wow-delay="0.4s">
 					<a href="https://www.google.ru/" class="header-button">Связаться</a>
 					<small>*Это бесплатно</small>
 				</div>
@@ -45,7 +46,7 @@
 	
 	<div class="portfolio"> 
 		<div class="container">
-			<div class="portfolio-block">
+			<div class="portfolio-block wow fadeIn">
 				<h2 class="portfolio-title">Портфолио</h2>
 				<p class="portfolio-subtitle">Мои работы</p>
 				<div class="row">
@@ -82,10 +83,10 @@
 				<div class="col-md-4">
 					<div class="social-block">
 						<p>Подпишитесь:</p>
-						<a href="#"><img src="img/social/facebook-logo-button.png" alt="картинка недоступна"></a>
-						<a href="#"><img src="img/social/vk-social-logotype.png" alt="картинка недоступна"></a>
-						<a href="#"><img src="img/social/telegram-symbol.png" alt="картинка недоступна"></a>
-						<a href="#"><img src="img/social/youtube-symbol.png" alt="картинка недоступна"></a>
+						<a href="#" class="wow bounceInDown" data-wow-delay="0.1s"><img  src="img/social/facebook-logo-button.png" alt="картинка недоступна" ></a>
+						<a href="#" class="wow bounceInDown" data-wow-delay="0.2s"><img  src="img/social/vk-social-logotype.png" alt="картинка недоступна" ></a>
+						<a href="#" class="wow bounceInDown" data-wow-delay="0.3s"><img  src="img/social/telegram-symbol.png" alt="картинка недоступна"></a>
+						<a href="#" class="wow bounceInDown" data-wow-delay="0.4s" ><img src="img/social/youtube-symbol.png" alt="картинка недоступна" ></a>
 						
 					</div>
 				</div>
@@ -106,6 +107,7 @@
 
 
 
-
+<script type="text/javascript" src="js/wow.min.js"></script>
+<script>new WOW().init();</script>
 </body>
 </html>
