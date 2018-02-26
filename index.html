@@ -13,7 +13,7 @@
 		<!-- Иконка, которая будет на вкладке в браузере -->
 		<!--<link rel="icon" href="/favicon.ico">-->
 		<!-- Заголовок на вкладке в браузере -->
-		<title>Академия вёрстки</title>
+		<title>Сайт под ключ</title>
 
 		<!-- Подключаем наш файл со стилями, который находится в папке css-->
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
@@ -25,16 +25,32 @@
 <body>
 	<header>
 		<div class="container">
+			<div class="top-nav">
+				<div class="row justify-content-between align-items-center">
+					<div class="col-xl-auto col-sm-3">
+						<h3>Максим <span>Грибанов</span></h3>
+						<small>Разработка сайтов под ключ</small>					
+					</div>
+					<div class="col-xl-auto col-sm-9">
+						
+						<ul class="top-nav_menu">
+							<li><a class="nav-link" href="#">Обо мне</a></li>
+							<li><a class="nav-link" href="#portfolio">Портфолио</a></li>
+							<li><a class="nav-link" href="#footer">Контакты</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
 			<div class="row">
 				<div class="col-lg-7"><img class="header-img wow fadeInLeftBig" src="img/Compphoto.png" alt="Монитор" ></div>
 				<!-- /.col-7 -->
 				<div class="col-lg-5">
 					<p class="header-prititle wow fadeInRightBig " data-wow-delay="0.1s">Веб-разработчик</p>
-					<h1 class="header-title wow fadeInRightBig" data-wow-delay="0.2s">Артём Исламов</h1>
+					<h1 class="header-title wow fadeInRightBig" data-wow-delay="0.2s">Максим Грибанов</h1>
 					<p class="header-subtite wow fadeInRightBig" data-wow-delay="0.3s">Верстка на HTML/CSS <br>
 Разработка сайтов под ключ</p>
 				<div class="header-button-block wow fadeInRightBig" data-wow-delay="0.4s">
-					<a href="https://www.google.ru/" class="header-button">Связаться</a>
+					<a href="https://vk.com/im?sel=157008689" target="_blank" class="header-button">Связаться</a>
 					<small>*Это бесплатно</small>
 				</div>
 				</div>
@@ -44,7 +60,7 @@
 		</div>
 	</header>
 	
-	<div class="portfolio"> 
+	<div class="portfolio" id="portfolio"> 
 		<div class="container">
 			<div class="portfolio-block wow fadeIn">
 				<h2 class="portfolio-title">Портфолио</h2>
@@ -73,27 +89,24 @@
 		</div>
 		
 	</div>
-	<footer>
+	<footer id="footer">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4">
-					<h4 class="footer-author">Артём Исламов</h4>
+					<h4 class="footer-author">Максим Грибанов</h4>
 					<p class="footer-text">Разработка сайтов под ключ</p>
 				</div>
 				<div class="col-md-4">
 					<div class="social-block">
 						<p>Подпишитесь:</p>
-						<a href="#" class="wow bounceInDown" data-wow-delay="0.1s"><img  src="img/social/facebook-logo-button.png" alt="картинка недоступна" ></a>
-						<a href="#" class="wow bounceInDown" data-wow-delay="0.2s"><img  src="img/social/vk-social-logotype.png" alt="картинка недоступна" ></a>
-						<a href="#" class="wow bounceInDown" data-wow-delay="0.3s"><img  src="img/social/telegram-symbol.png" alt="картинка недоступна"></a>
-						<a href="#" class="wow bounceInDown" data-wow-delay="0.4s" ><img src="img/social/youtube-symbol.png" alt="картинка недоступна" ></a>
-						
+						<a href="https://vk.com/id157008689" target="_blank" class="wow bounceInDown" data-wow-delay="0.2s"><img  src="img/social/vk-social-logotype.png" alt="картинка недоступна" ></a>
+						<a href="https://t.me/maksim3434" target="_blank" class="wow bounceInDown" data-wow-delay="0.3s"><img  src="img/social/telegram-symbol.png" alt="картинка недоступна"></a>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="footer-cta-block">
 						<p class="footer-cta">Напишите мне:</p>
-						<a href="https://www.google.by/?gfe_rd=cr&dcr=0&ei=E9N0Ws7tL87R8geSr4vgBA" class="footer-button">Написать</a>
+						<a href="https://vk.com/im?sel=157008689" target="_blank" class="footer-button">Написать</a>
 					</div>
 				</div>
 			</div>
@@ -107,7 +120,18 @@
 
 
 
-<script type="text/javascript" src="js/wow.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script>new WOW().init();</script>
+<script>
+$(document).ready(function() {
+    $("a.nav-link").click(function () { 
+      var elementClick = $(this).attr("href");
+      var destination = $(elementClick).offset().top;
+      $('html,body').animate( { scrollTop: destination }, 1100 );
+      return false;
+});
+});
+</script>
 </body>
 </html>
