@@ -12,11 +12,14 @@ h1, h2, h3, h4
 .flright
 	float: right
 .block1
-
+	border-bottom: 6px solid $red
 	&_img
 		background: url(../img/avat2.png) no-repeat center
+		-webkit-background-size: cover
+		-moz-background-size: cover
 		background-size: cover
 		
+
 	&_text
 	
 		background: linear-gradient(90deg, #A7AEB4, #EAEAEA)
@@ -74,6 +77,16 @@ h1, h2, h3, h4
 		color: #fff
 		font-size: 0.7em
 		margin-top: 20px
+		&_phone
+			p
+				a
+					color: #fafafa
+					font-weight: 800
+					font-size: 2em
+					text-decoration: none
+					&:hover
+						text-decoration: none
+						
 
 		p
 
@@ -89,13 +102,14 @@ h1, h2, h3, h4
 	font-size: 1.6em
 	font-family: 'Roboto'
 	color: #000
-	background: url(../img/fon.png) center no-repeat fixed
+	background: url(../img/fon.png) center no-repeat 
 	background-size: cover
 	min-height: 70vh
 	display: flex
 	justify-content: space-between
 	align-content: center
 	flex-direction: column 	
+	border-bottom: 6px solid $red
 	&_text
 		padding: 25px
 		font-weight: 500
@@ -104,13 +118,16 @@ h1, h2, h3, h4
 		border-radius: 10%
 		color: #fff
 		margin-bottom: 5%
+		p
+			background-color: rgba(#3A3939, 0.9)
+			padding: 2%
 	&_obr
 		h2
 			font-size: 1.6em
 			text-align: center
 			color: #fafafa
 			margin-bottom: 3%
-			opacity: 0.8
+			opacity: 0.9
 		&_ot
 			display: inline-block
 			max-width: 100%
@@ -174,37 +191,49 @@ h1, h2, h3, h4
 		color: #000
 		font-weight: 500
 	&_card
-		margin-bottom: 7%
+		margin-bottom: 5%
 		background-color: rgba(#DEDCDC, 0.5)
 		padding: 2%
-		min-height: 400px
+		min-height: 320px
+		max-height: 350px
 		transition: 0.5s ease
 		p
 			margin-top: 5%
 			margin-bottom: 10%
-			font-size: 1.3em
+			font-size: 1em
 			font-weight: 500	
 		div
-			min-height: 200px
+			min-height: 160px
 			margin-top: 5%
+			background-size: contain
 		.card1
 			background: url('../img/card1.png') no-repeat center
+			background-size: contain
+			
 		.card2
 			background: url('../img/card2.png') no-repeat center
+			background-size: contain
 		.card3
 			background: url('../img/card3.png') no-repeat center
+			background-size: contain
 		.card4
 			background: url('../img/card4.png') no-repeat center
+			background-size: contain
 		.card5
 			background: url('../img/card5.png') no-repeat center
+			background-size: contain
 		.card6
 			background: url('../img/card6.png') no-repeat center
+			background-size: contain
 		.card7
 			background: url('../img/card7.png') no-repeat center
+			background-size: contain
 		.card8
 			background: url('../img/card8.png') no-repeat center
+			background-size: contain
 		.card9
 			background: url('../img/card9.png') no-repeat center
+			background-size: contain
 
 		&:hover
 			background-color: $red
@@ -213,22 +242,31 @@ h1, h2, h3, h4
 				color: #fff
 			.card1
 				background: url('../img/card1_h.png') no-repeat center
+				background-size: contain
 			.card2
 				background: url('../img/card2_h.png') no-repeat center
+				background-size: contain
 			.card3
 				background: url('../img/card3_h.png') no-repeat center
+				background-size: contain
 			.card4
 				background: url('../img/card4_h.png') no-repeat center
+				background-size: contain
 			.card5
 				background: url('../img/card5_h.png') no-repeat center
+				background-size: contain
 			.card6
 				background: url('../img/card6_h.png') no-repeat center
+				background-size: contain
 			.card7
 				background: url('../img/card7_h.png') no-repeat center
+				background-size: contain
 			.card8
 				background: url('../img/card8_h.png') no-repeat center
+				background-size: contain
 			.card9
 				background: url('../img/card9_h.png') no-repeat center
+				background-size: contain
 .block4
 	margin-top: 50px
 	background-color: #E1DFDF
@@ -239,6 +277,8 @@ h1, h2, h3, h4
 		text-transform: uppercase
 		font-weight: 600
 		margin-bottom: 4%
+		text-align: center
+		
 	&_card
 		margin: 1%
 		text-align: center
@@ -309,13 +349,15 @@ h1, h2, h3, h4
 		text-transform: uppercase
 		font-weight: 800
 		margin-bottom: 3%
+		text-align: center
+		
 	&_card
 		padding: 4%
 		margin: 2%
-		border: 12px solid transparent
+		border: 6px solid transparent
 		border-image: linear-gradient(to right, #D60BC5 0%, $red 100%)
 		border-image-slice: 1
-		min-height: 150px
+		min-height: 160px
 		margin-bottom: 100px
 		p
 			font-weight: 500
@@ -323,6 +365,7 @@ h1, h2, h3, h4
 			padding-top: 5px
 			padding-bottom: 0
 			margin-bottom: 0
+			font-size: 1.4em
 		i
 			font-size: 2.2em
 			margin-left: -2%
