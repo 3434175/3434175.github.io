@@ -13,16 +13,13 @@ h1, h2, h3, h4
 	float: right
 .block1
 	border-bottom: 6px solid $red
-	&_img
-		background: url(../img/avat2.png) no-repeat center
-		-webkit-background-size: cover
-		-moz-background-size: cover
-		background-size: cover
+	background-color: #000
+	background: url('../img/fon1.png')
+	
 		
 
 	&_text
-	
-		background: linear-gradient(90deg, #A7AEB4, #EAEAEA)
+
 		h1
 			font-weight: bold
 			font-family: Arial
@@ -30,11 +27,10 @@ h1, h2, h3, h4
 			margin-top: 30px
 			color: rgba(#fff, 0.8)
 			text-align: center
-			margin-bottom: 40px
-			padding-bottom: 10px
+			margin-bottom: 50px
 			display: inline-block
 			
-			border-bottom: 3px solid rgba($red, 0.7)
+			border-bottom: 10px solid rgba($red, 0.7)
 			&:first-letter
 				color: rgba($red, 0.9)
 		&_present
@@ -48,20 +44,20 @@ h1, h2, h3, h4
 			padding-left: 10px
 			padding-right: 10px
 		&_inv
-			margin-top: 20px
+			margin-top: 30px
 			padding-left: 30px
 			font-size: 2.7em
 			color: rgba(#ECEAEA, 0.8)
 			span
 				display: inline-block
-				border-bottom: 3px solid rgba($red, 0.8)
+				border-bottom: 10px solid rgba($red, 0.8)
 		&_btn
 			margin-top: 70px
 			margin-bottom: 70px
 			button
-				width: 40%
+				width: 50%
 				min-width: 300px
-				height: 60px	
+				height: 70px	
 				background-color: $red
 				border-color: $red
 				font-size: 1.5em
@@ -133,56 +129,9 @@ h1, h2, h3, h4
 			max-width: 100%
 			text-align: center
 			width: 100%
-			margin-bottom: 5%
-	&_form
-		background-color: rgba($red, 0.6)
-		text-align: left
-		padding: 4%
-		padding-bottom: 5%
-		margin-bottom: 5%
-		border-radius: 20px
-		h3
-			color: rgba(#fafafa, 0.8)
-			font-weight: 600
-			font-size: 1.1em
-			margin-bottom: 2%
-			text-transform: uppercase
-			
-
-		form
-			input
-				margin-right: 4%
-				width: 20%	
-				min-width: 200px
-				background-color: rgba($red, 0.01)
-				outline: none
-				padding: 9px
-				font-size: 0.7em
-				color: #fff
-				border: 2px solid rgba(#fafafa, 0.9)
-				margin-bottom: 20px
-				
-				&::-webkit-input-placeholder
-					color: rgba(#fafafa, 0.7)
-				&:-moz-placeholder
-					color: rgba(#fafafa, 0.7)
-				&:-ms-input-placeholder
-					color: rgba(#fafafa, 0.7)
-			button
-				background-color: rgba(#EA1626, 0.7)
-				border: 2px solid transparent 
-				width: 25%
-				min-width: 200px
-				height: 50px
-				border-radius: 5px
-				margin-bottom: 20px
-				color: rgba(#fafafa, 0.8)
-				font-weight: 600
-				&:hover
-					border: 2px solid #EA1626
-					background-color: transparent
+			margin-bottom: 5%	
 .block3
-	padding-top: 5%
+	padding-top: 2%
 	text-align: center
 	
 	h2
@@ -423,7 +372,44 @@ h1, h2, h3, h4
 		background-color: $red
 		border-radius: 10px
 		color: #fafafa
+.block7
+	background-color: #fff
+	font-size: 1.8em
+	&_form
+		text-align: left
+		padding: 4%
+		padding-bottom: 5%
+		margin-bottom: 5%
+		border: 15px solid $red
+		margin-top: 2%
+		h3
+			font-weight: 700
+			font-size: 1.05em
+			margin-bottom: 4%
+			text-transform: uppercase
+			span
+				border-bottom: 10px solid $red
 
+		form
+
+			input
+				margin-right: 3%
+				width: 22%	
+				min-width: 200px
+				padding: 9px
+				font-size: 0.7em
+				margin-bottom: 20px
+			button
+				background-color: $red
+				border: 2px solid transparent 
+				width: 24%
+				min-width: 200px
+				height: 50px
+				border-radius: 5px
+				margin-bottom: 20px
+				color: #fff
+				font-weight: 600
+				
 
 
 						
