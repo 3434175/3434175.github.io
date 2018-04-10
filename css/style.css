@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900&subset=cyrillic,cyrillic-ext");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700i,900&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=Lobster&subset=cyrillic");
 body {
   margin: 0;
   padding: 0;
@@ -6,7 +8,7 @@ body {
   background-color: #fafafa; }
 
 h1, h2, h3, h4 {
-  font-family: "Roboto";
+  font-family: "Lobster", cursive;
   font-size: 20px; }
 
 .flright {
@@ -17,14 +19,14 @@ h1, h2, h3, h4 {
   background-color: #000;
   background: url("../img/fon1.png"); }
   .block1_text h1 {
-    font-weight: bold;
-    font-family: Arial;
+    font-weight: 900;
     font-size: 5em;
     margin-top: 30px;
     color: rgba(255, 255, 255, 0.8);
     text-align: center;
     margin-bottom: 50px;
     display: inline-block;
+    font-family: "Lobster", cursive;
     border-bottom: 10px solid rgba(226, 9, 9, 0.7); }
     .block1_text h1:first-letter {
       color: rgba(226, 9, 9, 0.9); }
@@ -37,7 +39,8 @@ h1, h2, h3, h4 {
     margin-left: 20px;
     padding-top: 5px;
     padding-left: 10px;
-    padding-right: 10px; }
+    padding-right: 10px;
+    font-family: "Roboto"; }
   .block1_text_inv {
     margin-top: 30px;
     padding-left: 30px;
@@ -387,3 +390,59 @@ h1, h2, h3, h4 {
       margin-bottom: 20px;
       color: #fff;
       font-weight: 600; }
+
+@media (max-width: 1000px) {
+  body {
+    font-size: 20px; }
+
+  .block1 {
+    height: 100vh; }
+    .block1 h1 {
+      margin-bottom: 5vh;
+      margin-top: 5vh; }
+    .block1_text_inv {
+      margin-top: 2vh;
+      font-size: 2.7em;
+      color: rgba(236, 234, 234, 0.8); }
+    .block1 button {
+      width: 100%;
+      height: 120px;
+      font-size: 2em;
+      margin-top: 20%; }
+
+  .block7 {
+    margin-top: 10%;
+    font-size: 2em;
+    margin-bottom: 10%; }
+    .block7 form input {
+      width: 95%;
+      margin-top: 20px;
+      height: 70px; }
+    .block7 form button {
+      width: 95%;
+      height: 70px;
+      font-size: 0.8em;
+      margin-top: 30px; }
+
+  .block3 {
+    font-size: 1.8em; }
+    .block3_card {
+      max-height: 500px; }
+
+  .block4 {
+    font-size: 1.6em; }
+    .block4_btn button {
+      width: 80%;
+      height: 120px;
+      margin-top: 10%; }
+
+  .block5 {
+    font-size: 1.6em; }
+    .block5 h2 {
+      margin-bottom: 10%; }
+    .block5_card {
+      border: 20px solid transparent;
+      border-image: linear-gradient(to right, #D60BC5 0%, #E20909 100%);
+      border-image-slice: 1;
+      margin-bottom: 20px;
+      margin-top: 20px; } }

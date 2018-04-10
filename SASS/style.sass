@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900&subset=cyrillic,cyrillic-ext')
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700i,900&subset=cyrillic')
+@import url('https://fonts.googleapis.com/css?family=Lobster&subset=cyrillic')
+
+
 $red: #E20909
 body
 	margin: 0
@@ -6,7 +10,7 @@ body
 	font-family: 'Roboto'
 	background-color: #fafafa
 h1, h2, h3, h4
-	font-family: 'Roboto'
+	font-family: 'Lobster', cursive
 	font-size: 20px
 
 .flright
@@ -21,15 +25,16 @@ h1, h2, h3, h4
 	&_text
 
 		h1
-			font-weight: bold
-			font-family: Arial
+			font-weight: 900
 			font-size: 5em	
 			margin-top: 30px
 			color: rgba(#fff, 0.8)
 			text-align: center
 			margin-bottom: 50px
 			display: inline-block
-			
+			font-family: 'Lobster', cursive
+
+
 			border-bottom: 10px solid rgba($red, 0.7)
 			&:first-letter
 				color: rgba($red, 0.9)
@@ -43,6 +48,7 @@ h1, h2, h3, h4
 			padding-top: 5px
 			padding-left: 10px
 			padding-right: 10px
+			font-family: 'Roboto'
 		&_inv
 			margin-top: 30px
 			padding-left: 30px
@@ -409,7 +415,63 @@ h1, h2, h3, h4
 				margin-bottom: 20px
 				color: #fff
 				font-weight: 600
-				
+
+@media (max-width: 1000px)
+	body
+		font-size: 20px
+	.block1
+		height: 100vh
+		h1
+			margin-bottom: 5vh
+			margin-top: 5vh
+		&_text
+			
+			&_inv
+				margin-top: 2vh				
+				font-size: 2.7em
+				color: rgba(#ECEAEA, 0.8)
+
+		button
+			width: 100%
+			height: 120px
+			font-size: 2em
+			margin-top: 20%
+	.block7
+		margin-top: 10%
+		font-size: 2em
+		margin-bottom: 10%
+		&_form
+		form
+			input
+				width: 95%	
+				margin-top: 20px
+				height: 70px
+			button
+				width: 95%
+				height: 70px
+				font-size: 0.8em
+				margin-top: 30px
+	.block3
+		font-size: 1.8em
+		&_card
+			max-height: 500px
+	.block4
+		font-size: 1.6em
+		&_btn
+			button
+				width: 80%
+				height: 120px
+				margin-top: 10%
+	.block5
+		font-size: 1.6em
+		h2
+			margin-bottom: 10%
+		&_card
+			border: 20px solid transparent 
+			border-image: linear-gradient(to right, #D60BC5 0%, $red 100%)
+			border-image-slice: 1
+			margin-bottom: 20px
+			margin-top: 20px
 
 
 						
