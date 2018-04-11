@@ -17,11 +17,17 @@ h1, h2, h3, h4 {
 .block1 {
   border-bottom: 6px solid #E20909;
   background-color: #000;
-  background: url("../img/fon1.png"); }
+  background: url("../img/fon1.png");
+  min-height: 100vh; }
+  .block1 .fon3 {
+    margin-top: 10vh;
+    height: 100%;
+    min-height: 400px;
+    background: url(../img/fon6.png) no-repeat center; }
   .block1_text h1 {
     font-weight: 900;
     font-size: 5em;
-    margin-top: 30px;
+    margin-top: 7vh;
     color: rgba(255, 255, 255, 0.8);
     text-align: center;
     margin-bottom: 50px;
@@ -89,7 +95,7 @@ h1, h2, h3, h4 {
   font-size: 1.6em;
   font-family: "Roboto";
   color: #000;
-  background: url(../img/fon.png) center no-repeat;
+  background: url(../img/fon8.png) center no-repeat;
   background-size: cover;
   min-height: 70vh;
   display: flex;
@@ -312,6 +318,13 @@ h1, h2, h3, h4 {
   padding-top: 30px;
   margin-top: 30px;
   color: #fff; }
+  .block6_tel {
+    text-align: center;
+    padding-top: 2%; }
+    .block6_tel a {
+      color: #fafafa;
+      font-weight: 800;
+      font-size: 1.5em; }
   .block6_text {
     color: #fff;
     font-family: Times-new-Roman;
@@ -396,7 +409,7 @@ h1, h2, h3, h4 {
     font-size: 20px; }
 
   .block1 {
-    height: 100vh; }
+    min-height: 100vh; }
     .block1 h1 {
       margin-bottom: 5vh;
       margin-top: 5vh; }
@@ -409,6 +422,12 @@ h1, h2, h3, h4 {
       height: 120px;
       font-size: 2em;
       margin-top: 20%; }
+    .block1_addr_phone {
+      font-size: 2em;
+      text-align: center !important;
+      margin-bottom: -5vh; }
+    .block1_addr .dn1 {
+      display: none; }
 
   .block7 {
     margin-top: 10%;
@@ -417,7 +436,8 @@ h1, h2, h3, h4 {
     .block7 form input {
       width: 95%;
       margin-top: 20px;
-      height: 70px; }
+      height: 70px;
+      border: 2px solid #E20909; }
     .block7 form button {
       width: 95%;
       height: 70px;
